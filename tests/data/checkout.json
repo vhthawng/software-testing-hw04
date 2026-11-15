@@ -1,0 +1,10 @@
+{
+  "primaryPrice": 100000,
+  "secondaryPrice": 50000,
+  "primaryQuantity": 2,
+  "secondaryQuantity": 3,
+  "singleQuantity": 1,
+  "multiTotal": 350000,
+  "samePriceTotal": 200000,
+  "replacementTotal": 300000
+}
