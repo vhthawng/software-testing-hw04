@@ -1,0 +1,736 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\university\\software-testing\\HW04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/products",
+      "--project=firefox",
+      "--reporter=list,html,json",
+      "--output=D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts"
+    ],
+    "configFile": "D:\\university\\software-testing\\HW04\\playwright.config.ts",
+    "rootDir": "D:/university/software-testing/HW04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-15/firefox/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-15/firefox/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "edge",
+        "name": "edge",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-15/firefox/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "html"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "products\\create.spec.ts",
+      "file": "products/create.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-C15-001 tạo và xem sản phẩm sau tải lại",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7242,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:38:05.586Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-0214ccc1535be3f1e36f",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-002 từ chối tên trống",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5716,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:38:14.039Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-9de11f4d635ce1908556",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-003 lưu tên một ký tự",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4865,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:38:19.832Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-0da77d82b22e95827557",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-004 lưu tên 255 ký tự",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6629,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:38:24.716Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-32a49292c701a83704e8",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-005 không lưu tên 256 ký tự",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4224,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -1,6 +1,7 @@\u001b[39m\n\u001b[2m  Array [\u001b[22m\n\u001b[31m+   \"[\\\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\\\",\\\"100000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -1,6 +1,7 @@\u001b[39m\n\u001b[2m  Array [\u001b[22m\n\u001b[31m+   \"[\\\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\\\",\\\"100000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                      "column": 39,
+                      "line": 52
+                    },
+                    "snippet": "  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                        "column": 39,
+                        "line": 52
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -1,6 +1,7 @@\u001b[39m\n\u001b[2m  Array [\u001b[22m\n\u001b[31m+   \"[\\\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\\\",\\\"100000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\n  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:38:31.400Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-005-không-lưu-tên-256-ký-tự-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-005-không-lưu-tên-256-ký-tự-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-005-không-lưu-tên-256-ký-tự-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                    "column": 39,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-636792bb34c94feab464",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-006 từ chối giá trống",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7784,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Empty Price\\\",\\\"₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Empty Price\\\",\\\"₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                      "column": 39,
+                      "line": 52
+                    },
+                    "snippet": "  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                        "column": 39,
+                        "line": 52
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Empty Price\\\",\\\"₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:38:37.480Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-006-từ-chối-giá-trống-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-006-từ-chối-giá-trống-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-006-từ-chối-giá-trống-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                    "column": 39,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-ef8de982ff312f261701",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-007 từ chối giá 0",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6102,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Zero Price\\\",\\\"0 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Zero Price\\\",\\\"0 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                      "column": 39,
+                      "line": 52
+                    },
+                    "snippet": "  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                        "column": 39,
+                        "line": 52
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Zero Price\\\",\\\"0 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:38:47.803Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-007-từ-chối-giá-0-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-007-từ-chối-giá-0-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-007-từ-chối-giá-0-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                    "column": 39,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-7518c44d20e4d1474e9b",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-008 lưu giá dương 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6386,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:38:55.802Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-0cb6903889cfc1e419bc",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-009 từ chối giá âm",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4400,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Negative Price\\\",\\\"-1 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Negative Price\\\",\\\"-1 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                      "column": 39,
+                      "line": 52
+                    },
+                    "snippet": "  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                        "column": 39,
+                        "line": 52
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Negative Price\\\",\\\"-1 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:39:02.924Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-009-từ-chối-giá-âm-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-009-từ-chối-giá-âm-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-create-TC-C15-009-từ-chối-giá-âm-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                    "column": 39,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-a86add143f4f47bf9be8",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-011 lưu danh mục khác mặc định",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:39:08.596Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-0ae41d8bac1e648db695",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "products\\manage.spec.ts",
+      "file": "products/manage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-C15-012 chỉ đổi tên sản phẩm đích, giữ các sản phẩm khác",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4815,
+                  "error": {
+                    "message": "Error: Danh sách ngay sau khi sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 6\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"HW04 Smoke Product f8128a34-6e0d-4dd6-813e-2981f31299f6\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"HW04 Updated Product\\\",\\\"100000 ₫\\\"]\",\u001b[22m\n\u001b[32m-   \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: Danh sách ngay sau khi sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 6\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"HW04 Smoke Product f8128a34-6e0d-4dd6-813e-2981f31299f6\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"HW04 Updated Product\\\",\\\"100000 ₫\\\"]\",\u001b[22m\n\u001b[32m-   \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts:28:68",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts",
+                      "column": 68,
+                      "line": 28
+                    },
+                    "snippet": "  26 |       ? JSON.stringify([data.updatedName, `${data.standardPrice} ₫`])\n  27 |       : row).sort();\n> 28 |   expect.soft(await inventory(page), 'Danh sách ngay sau khi sửa').toEqual(after);\n     |                                                                    ^\n  29 |\n  30 |   await reloadProducts(page);\n  31 |   expect(await inventory(page), 'Danh sách sau khi tải lại').toEqual(after);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts",
+                        "column": 68,
+                        "line": 28
+                      },
+                      "message": "Error: Danh sách ngay sau khi sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 6\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"HW04 Smoke Product f8128a34-6e0d-4dd6-813e-2981f31299f6\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"HW04 Updated Product\\\",\\\"100000 ₫\\\"]\",\u001b[22m\n\u001b[32m-   \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  26 |       ? JSON.stringify([data.updatedName, `${data.standardPrice} ₫`])\n  27 |       : row).sort();\n> 28 |   expect.soft(await inventory(page), 'Danh sách ngay sau khi sửa').toEqual(after);\n     |                                                                    ^\n  29 |\n  30 |   await reloadProducts(page);\n  31 |   expect(await inventory(page), 'Danh sách sau khi tải lại').toEqual(after);\n    at D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts:28:68"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:39:15.356Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-manage-TC-C15-012-c7a4f--đích-giữ-các-sản-phẩm-khác-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-manage-TC-C15-012-c7a4f--đích-giữ-các-sản-phẩm-khác-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\firefox\\artifacts\\products-manage-TC-C15-012-c7a4f--đích-giữ-các-sản-phẩm-khác-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts",
+                    "column": 68,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2d5632909b42a027c1fc-973f4be55ffbdeed06de",
+          "file": "products/manage.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "TC-C15-016 chỉ xóa sản phẩm thử, giữ nguyên các dòng khác",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6102,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:39:21.460Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d5632909b42a027c1fc-fb6efcfcd047191bc0ae",
+          "file": "products/manage.spec.ts",
+          "line": 37,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T01:38:00.559Z",
+    "duration": 89141.19900000001,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

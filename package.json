@@ -4,7 +4,8 @@
   "scripts": {
     "sut:prepare": "node scripts/prepare-sut.mjs",
     "browsers:install": "playwright install firefox",
-    "test:smoke": "playwright test tests/smoke"
+    "test:smoke": "playwright test tests/smoke",
+    "test:matrix": "node scripts/run-matrix.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1"

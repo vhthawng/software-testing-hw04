@@ -1,0 +1,837 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\university\\software-testing\\HW04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/profile",
+      "--project=firefox",
+      "--reporter=list,html,json",
+      "--output=D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts"
+    ],
+    "configFile": "D:\\university\\software-testing\\HW04\\playwright.config.ts",
+    "rootDir": "D:/university/software-testing/HW04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-04/firefox/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-04/firefox/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "edge",
+        "name": "edge",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-04/firefox/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "html"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "profile\\details.spec.ts",
+      "file": "profile/details.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-A04-007 cập nhật họ tên, giữ số và địa chỉ",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 14594,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:9:42",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                      "column": 42,
+                      "line": 9
+                    },
+                    "snippet": "   7 |   await openProfile(page, customer);\n   8 |   await profileFields(page).name.fill(data.updatedName);\n>  9 |   expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                          ^\n  10 |   await expectPersisted(page, { ...data.baseline, name: data.updatedName });\n  11 | });\n  12 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                        "column": 42,
+                        "line": 9
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n\n   7 |   await openProfile(page, customer);\n   8 |   await profileFields(page).name.fill(data.updatedName);\n>  9 |   expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                          ^\n  10 |   await expectPersisted(page, { ...data.baseline, name: data.updatedName });\n  11 | });\n  12 |\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:9:42"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts",
+                        "column": 48,
+                        "line": 53
+                      },
+                      "message": "Error: Tên đã lưu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main form').getByRole('textbox').nth(1)\nExpected: \u001b[32m\"Nguyễn Thị Bình\"\u001b[39m\nReceived: \u001b[31m\"HW04 Smoke User\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Tên đã lưu with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main form').getByRole('textbox').nth(1)\u001b[22m\n\u001b[2m    13 × locator resolved to <input required=\"\" type=\"text\" value=\"HW04 Smoke User\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"HW04 Smoke User\"\u001b[22m\n\n\n   at profile\\profile.ts:53\n\n  51 |   await page.reload({ waitUntil: 'domcontentloaded' });\n  52 |   const fields = profileFields(page);\n> 53 |   await expect.soft(fields.name, 'Tên đã lưu').toHaveValue(expected.name);\n     |                                                ^\n  54 |   await expect.soft(fields.phone, 'Số điện thoại đã lưu').toHaveValue(expected.phone);\n  55 |   await expect.soft(fields.address, 'Địa chỉ đã lưu').toHaveValue(expected.address);\n  56 | }\n    at expectPersisted (D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts:53:48)\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:10:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:31:52.454Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-007-cập-nhật-họ-tên-giữ-số-và-địa-chỉ-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-007-cập-nhật-họ-tên-giữ-số-và-địa-chỉ-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-007-cập-nhật-họ-tên-giữ-số-và-địa-chỉ-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                    "column": 42,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "46fcb8fc987255b1cbee-4a6fa036cc23f21aa6b9",
+          "file": "profile/details.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "TC-A04-008 cập nhật địa chỉ, giữ tên và số",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10859,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:17:42",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                      "column": 42,
+                      "line": 17
+                    },
+                    "snippet": "  15 |   await openProfile(page, customer);\n  16 |   await profileFields(page).address.fill(data.updatedAddress);\n> 17 |   expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                          ^\n  18 |   await expectPersisted(page, { ...data.baseline, name: customer.name, address: data.updatedAddress });\n  19 | });\n  20 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                        "column": 42,
+                        "line": 17
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n\n  15 |   await openProfile(page, customer);\n  16 |   await profileFields(page).address.fill(data.updatedAddress);\n> 17 |   expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                          ^\n  18 |   await expectPersisted(page, { ...data.baseline, name: customer.name, address: data.updatedAddress });\n  19 | });\n  20 |\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:17:42"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts",
+                        "column": 55,
+                        "line": 55
+                      },
+                      "message": "Error: Địa chỉ đã lưu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main form').getByPlaceholder('Nhập địa chỉ của bạn', { exact: true })\nExpected: \u001b[32m\"\u001b[7m45\u001b[27m Nguyễn \u001b[7mHuệ, Quận 1\u001b[27m, TP.HCM\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m18\u001b[27m Nguyễn \u001b[7mTrãi\u001b[27m, TP.HCM\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Địa chỉ đã lưu with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main form').getByPlaceholder('Nhập địa chỉ của bạn', { exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <textarea placeholder=\"Nhập địa chỉ của bạn\" class=\"w-full border p-2 rounded h-24\">18 Nguyễn Trãi, TP.HCM</textarea>\u001b[22m\n\u001b[2m       - unexpected value \"18 Nguyễn Trãi, TP.HCM\"\u001b[22m\n\n\n   at profile\\profile.ts:55\n\n  53 |   await expect.soft(fields.name, 'Tên đã lưu').toHaveValue(expected.name);\n  54 |   await expect.soft(fields.phone, 'Số điện thoại đã lưu').toHaveValue(expected.phone);\n> 55 |   await expect.soft(fields.address, 'Địa chỉ đã lưu').toHaveValue(expected.address);\n     |                                                       ^\n  56 | }\n  57 |\n    at expectPersisted (D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts:55:55)\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:18:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:32:09.688Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-008-cập-nhật-địa-chỉ-giữ-tên-và-số-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-008-cập-nhật-địa-chỉ-giữ-tên-và-số-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-008-cập-nhật-địa-chỉ-giữ-tên-và-số-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                    "column": 42,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "46fcb8fc987255b1cbee-32a0c93e4d1a2e26f3f4",
+          "file": "profile/details.spec.ts",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "TC-A04-009 email chỉ đọc và giữ nguyên sau tải lại",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5010,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:32:22.505Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "46fcb8fc987255b1cbee-bb964cfb074a35295858",
+          "file": "profile/details.spec.ts",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "TC-A04-015 khách không có form cập nhật hồ sơ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2858,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:32:28.161Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "46fcb8fc987255b1cbee-2a7a1389d69d9c04151b",
+          "file": "profile/details.spec.ts",
+          "line": 30,
+          "column": 5
+        },
+        {
+          "title": "TC-A04-016 sửa hồ sơ A không đổi hồ sơ B trong phiên riêng",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12984,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:44:42",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                      "column": 42,
+                      "line": 44
+                    },
+                    "snippet": "  42 |   await openProfile(page, customer);\n  43 |   await profileFields(page).name.fill(data.updatedName);\n> 44 |   expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                          ^\n  45 |   await expectPersisted(page, { ...data.baseline, name: data.updatedName });\n  46 |\n  47 |   const otherContext = await browser.newContext({ baseURL: new URL(page.url()).origin });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                        "column": 42,
+                        "line": 44
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n\n  42 |   await openProfile(page, customer);\n  43 |   await profileFields(page).name.fill(data.updatedName);\n> 44 |   expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                          ^\n  45 |   await expectPersisted(page, { ...data.baseline, name: data.updatedName });\n  46 |\n  47 |   const otherContext = await browser.newContext({ baseURL: new URL(page.url()).origin });\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:44:42"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts",
+                        "column": 48,
+                        "line": 53
+                      },
+                      "message": "Error: Tên đã lưu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main form').getByRole('textbox').nth(1)\nExpected: \u001b[32m\"Nguyễn Thị Bình\"\u001b[39m\nReceived: \u001b[31m\"HW04 Smoke User\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Tên đã lưu with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main form').getByRole('textbox').nth(1)\u001b[22m\n\u001b[2m    13 × locator resolved to <input required=\"\" type=\"text\" value=\"HW04 Smoke User\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"HW04 Smoke User\"\u001b[22m\n\n\n   at profile\\profile.ts:53\n\n  51 |   await page.reload({ waitUntil: 'domcontentloaded' });\n  52 |   const fields = profileFields(page);\n> 53 |   await expect.soft(fields.name, 'Tên đã lưu').toHaveValue(expected.name);\n     |                                                ^\n  54 |   await expect.soft(fields.phone, 'Số điện thoại đã lưu').toHaveValue(expected.phone);\n  55 |   await expect.soft(fields.address, 'Địa chỉ đã lưu').toHaveValue(expected.address);\n  56 | }\n    at expectPersisted (D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts:53:48)\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts:45:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:32:31.046Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-016-fe90c-i-hồ-sơ-B-trong-phiên-riêng-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-016-fe90c-i-hồ-sơ-B-trong-phiên-riêng-firefox\\test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-016-fe90c-i-hồ-sơ-B-trong-phiên-riêng-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-details-TC-A04-016-fe90c-i-hồ-sơ-B-trong-phiên-riêng-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\details.spec.ts",
+                    "column": 42,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "46fcb8fc987255b1cbee-5cc82e51c3955cdcffb6",
+          "file": "profile/details.spec.ts",
+          "line": 36,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "profile\\phone-accepted.spec.ts",
+      "file": "profile/phone-accepted.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-A04-001 chấp nhận số 10 chữ số",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12229,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts:10:44",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts",
+                      "column": 44,
+                      "line": 10
+                    },
+                    "snippet": "   8 |     await openProfile(page, customer);\n   9 |     await profileFields(page).phone.fill(phone);\n> 10 |     expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                            ^\n  11 |     await expectPersisted(page, { ...data.baseline, name: customer.name, phone });\n  12 |   });\n  13 | }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts",
+                        "column": 44,
+                        "line": 10
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n\n   8 |     await openProfile(page, customer);\n   9 |     await profileFields(page).phone.fill(phone);\n> 10 |     expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                            ^\n  11 |     await expectPersisted(page, { ...data.baseline, name: customer.name, phone });\n  12 |   });\n  13 | }\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts:10:44"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts",
+                        "column": 59,
+                        "line": 54
+                      },
+                      "message": "Error: Số điện thoại đã lưu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main form').getByPlaceholder('VD: 0912345678', { exact: true })\nExpected: \u001b[32m\"09\u001b[7m12345678\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"09\u001b[7m87654321\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Số điện thoại đã lưu with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main form').getByPlaceholder('VD: 0912345678', { exact: true })\u001b[22m\n\u001b[2m    13 × locator resolved to <input type=\"text\" value=\"0987654321\" placeholder=\"VD: 0912345678\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"0987654321\"\u001b[22m\n\n\n   at profile\\profile.ts:54\n\n  52 |   const fields = profileFields(page);\n  53 |   await expect.soft(fields.name, 'Tên đã lưu').toHaveValue(expected.name);\n> 54 |   await expect.soft(fields.phone, 'Số điện thoại đã lưu').toHaveValue(expected.phone);\n     |                                                           ^\n  55 |   await expect.soft(fields.address, 'Địa chỉ đã lưu').toHaveValue(expected.address);\n  56 | }\n  57 |\n    at expectPersisted (D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts:54:59)\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts:11:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:32:45.499Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-accepted-TC-A04-001-chấp-nhận-số-10-chữ-số-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-accepted-TC-A04-001-chấp-nhận-số-10-chữ-số-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-accepted-TC-A04-001-chấp-nhận-số-10-chữ-số-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts",
+                    "column": 44,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "44a45a8a0228bbd7e039-5dc21222d3b531583a13",
+          "file": "profile/phone-accepted.spec.ts",
+          "line": 6,
+          "column": 7
+        },
+        {
+          "title": "TC-A04-003 chấp nhận số 11 chữ số",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10504,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts:10:44",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts",
+                      "column": 44,
+                      "line": 10
+                    },
+                    "snippet": "   8 |     await openProfile(page, customer);\n   9 |     await profileFields(page).phone.fill(phone);\n> 10 |     expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                            ^\n  11 |     await expectPersisted(page, { ...data.baseline, name: customer.name, phone });\n  12 |   });\n  13 | }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts",
+                        "column": 44,
+                        "line": 10
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Cập nhật thành công!\"\u001b[39m\nReceived: \u001b[31m\"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\"\u001b[39m\n\n   8 |     await openProfile(page, customer);\n   9 |     await profileFields(page).phone.fill(phone);\n> 10 |     expect.soft(await submitProfile(page)).toBe('Cập nhật thành công!');\n     |                                            ^\n  11 |     await expectPersisted(page, { ...data.baseline, name: customer.name, phone });\n  12 |   });\n  13 | }\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts:10:44"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts",
+                        "column": 59,
+                        "line": 54
+                      },
+                      "message": "Error: Số điện thoại đã lưu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main form').getByPlaceholder('VD: 0912345678', { exact: true })\nExpected: \u001b[32m\"09\u001b[7m123456789\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"09\u001b[7m87654321\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Số điện thoại đã lưu with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main form').getByPlaceholder('VD: 0912345678', { exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <input type=\"text\" value=\"0987654321\" placeholder=\"VD: 0912345678\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"0987654321\"\u001b[22m\n\n\n   at profile\\profile.ts:54\n\n  52 |   const fields = profileFields(page);\n  53 |   await expect.soft(fields.name, 'Tên đã lưu').toHaveValue(expected.name);\n> 54 |   await expect.soft(fields.phone, 'Số điện thoại đã lưu').toHaveValue(expected.phone);\n     |                                                           ^\n  55 |   await expect.soft(fields.address, 'Địa chỉ đã lưu').toHaveValue(expected.address);\n  56 | }\n  57 |\n    at expectPersisted (D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts:54:59)\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts:11:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:32:59.738Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-accepted-TC-A04-003-chấp-nhận-số-11-chữ-số-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-accepted-TC-A04-003-chấp-nhận-số-11-chữ-số-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-accepted-TC-A04-003-chấp-nhận-số-11-chữ-số-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-accepted.spec.ts",
+                    "column": 44,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "44a45a8a0228bbd7e039-740acdab2f9b612aeda8",
+          "file": "profile/phone-accepted.spec.ts",
+          "line": 6,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "profile\\phone-rejected.spec.ts",
+      "file": "profile/phone-rejected.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-A04-002 từ chối số 9 chữ số",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:33:12.144Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05121a9670d07dd90d5a-fca17ec6ff638c83fa5a",
+          "file": "profile/phone-rejected.spec.ts",
+          "line": 6,
+          "column": 7
+        },
+        {
+          "title": "TC-A04-004 từ chối số 12 chữ số",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4623,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:33:18.063Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05121a9670d07dd90d5a-891e673834c47c5481ec",
+          "file": "profile/phone-rejected.spec.ts",
+          "line": 6,
+          "column": 7
+        },
+        {
+          "title": "TC-A04-005 từ chối số không bắt đầu bằng 0",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9132,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"Cập nhật thành công!\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"Cập nhật thành công!\"\u001b[39m\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-rejected.spec.ts:12:48",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-rejected.spec.ts",
+                      "column": 48,
+                      "line": 12
+                    },
+                    "snippet": "  10 |     await profileFields(page).phone.fill(phone);\n  11 |     // The dialog signals completion in this SUT. The stored snapshot is the acceptance criterion.\n> 12 |     expect.soft(await submitProfile(page)).not.toBe('Cập nhật thành công!');\n     |                                                ^\n  13 |     await expectPersisted(page, { ...data.baseline, name: customer.name });\n  14 |   });\n  15 | }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-rejected.spec.ts",
+                        "column": 48,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"Cập nhật thành công!\"\u001b[39m\n\n  10 |     await profileFields(page).phone.fill(phone);\n  11 |     // The dialog signals completion in this SUT. The stored snapshot is the acceptance criterion.\n> 12 |     expect.soft(await submitProfile(page)).not.toBe('Cập nhật thành công!');\n     |                                                ^\n  13 |     await expectPersisted(page, { ...data.baseline, name: customer.name });\n  14 |   });\n  15 | }\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-rejected.spec.ts:12:48"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts",
+                        "column": 59,
+                        "line": 54
+                      },
+                      "message": "Error: Số điện thoại đã lưu\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('main form').getByPlaceholder('VD: 0912345678', { exact: true })\nExpected: \u001b[32m\"0987654321\"\u001b[39m\nReceived: \u001b[31m\"1912345678\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Số điện thoại đã lưu with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main form').getByPlaceholder('VD: 0912345678', { exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <input type=\"text\" value=\"1912345678\" placeholder=\"VD: 0912345678\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"1912345678\"\u001b[22m\n\n\n   at profile\\profile.ts:54\n\n  52 |   const fields = profileFields(page);\n  53 |   await expect.soft(fields.name, 'Tên đã lưu').toHaveValue(expected.name);\n> 54 |   await expect.soft(fields.phone, 'Số điện thoại đã lưu').toHaveValue(expected.phone);\n     |                                                           ^\n  55 |   await expect.soft(fields.address, 'Địa chỉ đã lưu').toHaveValue(expected.address);\n  56 | }\n  57 |\n    at expectPersisted (D:\\university\\software-testing\\HW04\\tests\\profile\\profile.ts:54:59)\n    at D:\\university\\software-testing\\HW04\\tests\\profile\\phone-rejected.spec.ts:13:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:33:22.712Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-rejected-TC--c7b91-hối-số-không-bắt-đầu-bằng-0-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-rejected-TC--c7b91-hối-số-không-bắt-đầu-bằng-0-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-04\\firefox\\artifacts\\profile-phone-rejected-TC--c7b91-hối-số-không-bắt-đầu-bằng-0-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\profile\\phone-rejected.spec.ts",
+                    "column": 48,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05121a9670d07dd90d5a-8bc8e1b5252faef05dc3",
+          "file": "profile/phone-rejected.spec.ts",
+          "line": 6,
+          "column": 7
+        },
+        {
+          "title": "TC-A04-006 từ chối số chứa chữ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5983,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:33:33.151Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05121a9670d07dd90d5a-85f33455561d86c914e8",
+          "file": "profile/phone-rejected.spec.ts",
+          "line": 6,
+          "column": 7
+        },
+        {
+          "title": "TC-A04-014 từ chối số trống",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4187,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:33:39.824Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05121a9670d07dd90d5a-ff1d64320e23dde01e58",
+          "file": "profile/phone-rejected.spec.ts",
+          "line": 6,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T01:31:45.936Z",
+    "duration": 119470.691,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

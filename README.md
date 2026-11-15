@@ -28,3 +28,15 @@ npm exec -- playwright test tests/checkout tests/profile tests/products --projec
 ```
 
 Xem danh sách case và các giới hạn của bộ test trong [bảng truy vết](docs/phase-2-cases.md). Các lượt chạy kiểm tra trên Chrome phục vụ Phase 3. Ma trận báo cáo nộp bài thuộc Phase 4.
+
+## Chạy ma trận Phase 4
+
+```powershell
+npm run test:matrix -- --student-id 23120355
+```
+
+Lệnh chạy lần lượt 9 cặp tính năng–trình duyệt, mỗi cặp khởi động lại EShop trên bản SQLite dùng riêng. Xem vị trí thư mục kết quả trong dòng `Matrix output`. Mỗi cặp có HTML, JSON và các tệp bằng chứng. `summary.json` lưu số case thực thi và trạng thái từng cặp.
+
+Lệnh tiếp tục sau khi một cặp có test fail. Mã thoát `0` nghĩa là tất cả pass, `1` nghĩa là ma trận đầy đủ có kết quả ngoài kỳ vọng, và `2` nghĩa là có cặp thiếu lượt chạy hoặc báo cáo. Nếu lượt chạy được thực hiện hộ, truyền thêm `--operator` với tên người hoặc công cụ thực sự chạy.
+
+[Kết quả Phase 4 và 9 báo cáo Playwright](docs/phase-4-results.md) có trong repo. Tải toàn bộ thư mục `html` của lượt cần xem để giữ các tệp ảnh và trace đi kèm.

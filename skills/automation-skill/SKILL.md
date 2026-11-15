@@ -22,6 +22,7 @@ description: Chuyển đặc tả và test case thủ công thành bộ kiểm t
 - Khi đặc tả yêu cầu danh sách đủ phần tử, so khớp tập phần tử có tính số lần xuất hiện. Chỉ kiểm tra thứ tự nếu đó là yêu cầu nghiệp vụ.
 - Khi thao tác có kết quả trên giao diện và dữ liệu lưu riêng, kiểm tra trạng thái ngay sau thao tác và kiểm tra lại sau tải trang nếu cả hai thuộc kỳ vọng. Với trạng thái chỉ tồn tại trong phiên như giỏ hàng, kiểm tra trong cùng phiên trước khi tải lại trang.
 - Với case từ chối đầu vào, đợi dấu hiệu xử lý phù hợp với UI như chặn native, thông báo hoặc phản hồi request rồi xác nhận dữ liệu giữ nguyên. Chỉ so câu thông báo hoặc bắt buộc có request khi đặc tả yêu cầu hoặc khi spec ghi rõ đang kiểm tra một nhánh triển khai cụ thể.
+- Với lỗi xuất hiện tạm thời hoặc ngoài vùng đang nhìn thấy, chụp phần tử tại bước có trạng thái sai hoặc lấy khung hình tương ứng từ trace. Rà ảnh trước khi dùng làm bằng chứng.
 
 ## Tham khảo Playwright trong repo
 

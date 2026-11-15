@@ -1,0 +1,736 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\university\\software-testing\\HW04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/products",
+      "--project=edge",
+      "--reporter=list,html,json",
+      "--output=D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts"
+    ],
+    "configFile": "D:\\university\\software-testing\\HW04\\playwright.config.ts",
+    "rootDir": "D:/university/software-testing/HW04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-15/edge/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-15/edge/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "edge",
+        "name": "edge",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/university/software-testing/HW04/.hw04/matrix/2026-11-15T01-29-19-066Z/FR-15/edge/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/university/software-testing/HW04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "html"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "products\\create.spec.ts",
+      "file": "products/create.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-C15-001 tạo và xem sản phẩm sau tải lại",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3800,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:21.865Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-1745faf513262d8f69e0",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-002 từ chối tên trống",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2355,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:26.656Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-9b519f542b1a89e23535",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-003 lưu tên một ký tự",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2260,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:29.067Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-cd79b1830629a37f3a80",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-004 lưu tên 255 ký tự",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2312,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:31.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-88feb37acd759e3d2b5c",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-005 không lưu tên 256 ký tự",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1579,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -1,6 +1,7 @@\u001b[39m\n\u001b[2m  Array [\u001b[22m\n\u001b[31m+   \"[\\\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\\\",\\\"100000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -1,6 +1,7 @@\u001b[39m\n\u001b[2m  Array [\u001b[22m\n\u001b[31m+   \"[\\\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\\\",\\\"100000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                      "column": 39,
+                      "line": 52
+                    },
+                    "snippet": "  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                        "column": 39,
+                        "line": 52
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[33m@@ -1,6 +1,7 @@\u001b[39m\n\u001b[2m  Array [\u001b[22m\n\u001b[31m+   \"[\\\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\\\",\\\"100000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\n  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:33.697Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-005-không-lưu-tên-256-ký-tự-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-005-không-lưu-tên-256-ký-tự-edge\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-005-không-lưu-tên-256-ký-tự-edge\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                    "column": 39,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-55984a4797c2b5c16e1c",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-006 từ chối giá trống",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3027,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Empty Price\\\",\\\"₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Empty Price\\\",\\\"₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                      "column": 39,
+                      "line": 52
+                    },
+                    "snippet": "  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                        "column": 39,
+                        "line": 52
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Empty Price\\\",\\\"₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:36.428Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-006-từ-chối-giá-trống-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-006-từ-chối-giá-trống-edge\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-006-từ-chối-giá-trống-edge\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                    "column": 39,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-0a8e63985d57a94fb423",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-007 từ chối giá 0",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2354,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Zero Price\\\",\\\"0 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Zero Price\\\",\\\"0 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                      "column": 39,
+                      "line": 52
+                    },
+                    "snippet": "  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                        "column": 39,
+                        "line": 52
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Zero Price\\\",\\\"0 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:41.263Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-007-từ-chối-giá-0-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-007-từ-chối-giá-0-edge\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-007-từ-chối-giá-0-edge\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                    "column": 39,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-cfd7b1cb12cf33d2323d",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-008 lưu giá dương 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2495,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:45.163Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-2d29ed262870f85af4c7",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-009 từ chối giá âm",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2043,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Negative Price\\\",\\\"-1 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Negative Price\\\",\\\"-1 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                      "column": 39,
+                      "line": 52
+                    },
+                    "snippet": "  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                        "column": 39,
+                        "line": 52
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 0\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[22m\n\u001b[31m+   \"[\\\"HW04 Negative Price\\\",\\\"-1 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[22m\n\u001b[2m    \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[22m\n\u001b[2m  ]\u001b[22m\n\n  50 |         await expect(productRow(page, enteredName)).toHaveCount(1);\n  51 |       } else {\n> 52 |         expect(await inventory(page)).toEqual(before);\n     |                                       ^\n  53 |       }\n  54 |     } finally {\n  55 |       if (createdId !== undefined) {\n    at D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts:52:39"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:48.057Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-009-từ-chối-giá-âm-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-009-từ-chối-giá-âm-edge\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-create-TC-C15-009-từ-chối-giá-âm-edge\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\create.spec.ts",
+                    "column": 39,
+                    "line": 52
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-69435072eaf78e01626d",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "TC-C15-011 lưu danh mục khác mặc định",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2121,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:51.153Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "84f94c7b992efc79f8d3-64add474c9c0a520e26c",
+          "file": "products/create.spec.ts",
+          "line": 7,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "products\\manage.spec.ts",
+      "file": "products/manage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TC-C15-012 chỉ đổi tên sản phẩm đích, giữ các sản phẩm khác",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1798,
+                  "error": {
+                    "message": "Error: Danh sách ngay sau khi sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 6\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"HW04 Smoke Product 85a550f2-1881-44b8-bf54-a846c51770e2\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"HW04 Updated Product\\\",\\\"100000 ₫\\\"]\",\u001b[22m\n\u001b[32m-   \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: Danh sách ngay sau khi sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 6\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"HW04 Smoke Product 85a550f2-1881-44b8-bf54-a846c51770e2\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"HW04 Updated Product\\\",\\\"100000 ₫\\\"]\",\u001b[22m\n\u001b[32m-   \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts:28:68",
+                    "location": {
+                      "file": "D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts",
+                      "column": 68,
+                      "line": 28
+                    },
+                    "snippet": "  26 |       ? JSON.stringify([data.updatedName, `${data.standardPrice} ₫`])\n  27 |       : row).sort();\n> 28 |   expect.soft(await inventory(page), 'Danh sách ngay sau khi sửa').toEqual(after);\n     |                                                                    ^\n  29 |\n  30 |   await reloadProducts(page);\n  31 |   expect(await inventory(page), 'Danh sách sau khi tải lại').toEqual(after);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts",
+                        "column": 68,
+                        "line": 28
+                      },
+                      "message": "Error: Danh sách ngay sau khi sửa\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 6\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"[\\\"Bàn phím cơ Keychron Q1\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"HW04 Smoke Product 85a550f2-1881-44b8-bf54-a846c51770e2\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[2m    \"[\\\"HW04 Updated Product\\\",\\\"100000 ₫\\\"]\",\u001b[22m\n\u001b[32m-   \"[\\\"MacBook Pro M3\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Samsung Galaxy S24 Ultra\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"Tai nghe AirPods Pro 2\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[32m-   \"[\\\"iPhone 15 Pro Max\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"28000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"30000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"4000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"45000000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"50000 ₫\\\"]\",\u001b[39m\n\u001b[31m+   \"[\\\"HW04 Updated Product\\\",\\\"6000000 ₫\\\"]\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  26 |       ? JSON.stringify([data.updatedName, `${data.standardPrice} ₫`])\n  27 |       : row).sort();\n> 28 |   expect.soft(await inventory(page), 'Danh sách ngay sau khi sửa').toEqual(after);\n     |                                                                    ^\n  29 |\n  30 |   await reloadProducts(page);\n  31 |   expect(await inventory(page), 'Danh sách sau khi tải lại').toEqual(after);\n    at D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts:28:68"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:53.696Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-manage-TC-C15-012-c7a4f--đích-giữ-các-sản-phẩm-khác-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-manage-TC-C15-012-c7a4f--đích-giữ-các-sản-phẩm-khác-edge\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\university\\software-testing\\HW04\\.hw04\\matrix\\2026-11-15T01-29-19-066Z\\FR-15\\edge\\artifacts\\products-manage-TC-C15-012-c7a4f--đích-giữ-các-sản-phẩm-khác-edge\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\university\\software-testing\\HW04\\tests\\products\\manage.spec.ts",
+                    "column": 68,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2d5632909b42a027c1fc-4e21f1d2e8b928b941db",
+          "file": "products/manage.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "TC-C15-016 chỉ xóa sản phẩm thử, giữ nguyên các dòng khác",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1820,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-15T01:37:56.586Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d5632909b42a027c1fc-5eed49ee4065e97bf54a",
+          "file": "products/manage.spec.ts",
+          "line": 37,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-15T01:37:16.930Z",
+    "duration": 42880.161,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

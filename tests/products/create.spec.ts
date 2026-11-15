@@ -35,6 +35,14 @@ for (const sample of data.create) {
       }
 
       await reloadProducts(page);
+      if (!sample.accept && createdId !== undefined) {
+        const savedRow = productRow(page, enteredName);
+        if (await savedRow.count() === 1) {
+          const screenshot = test.info().outputPath('invalid-record.png');
+          await savedRow.screenshot({ path: screenshot });
+          await test.info().attach('Dòng sản phẩm đã lưu', { path: screenshot, contentType: 'image/png' });
+        }
+      }
       if (sample.accept) {
         const row = productRow(page, name);
         await expect(row).toHaveCount(1);

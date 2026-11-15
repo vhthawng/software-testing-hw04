@@ -254,4 +254,29 @@ Vậy hãy thực hiện phase 3. Tạo subagent reivew và rút ra observation 
 
 Các nguyên tắc về đối chiếu danh sách, kiểm tra trạng thái trong phiên và chờ tín hiệu xử lý đã được bổ sung vào `automation-skill`. Sinh viên sẽ xác nhận nhận xét review trước khi nộp.
 
+### Kết quả chạy lại trên Chrome
+
+Prompt: `Hãy chạy 36 test case trên Chrome mà lần trước bị từ chối.`
+
+Lượt chạy bắt đầu lúc `2026-11-15T08:24:03+07:00`. Chạy đủ 36 case trong khoảng 2 phút 24 giây, kết quả 23 pass và 13 fail.
+
+| Tính năng | Pass | Fail | Quan sát |
+| --- | ---: | ---: | --- |
+| FR-04 | 6 | 6 | Quy tắc số điện thoại sai làm từ chối số hợp lệ và cản thao tác lưu tên/địa chỉ. Case số bắt đầu bằng 1 được lưu. |
+| FR-08 | 10 | 2 | Giỏ còn hàng sau khi đặt đơn và trường tổng tiền cho chỉnh sửa. |
+| FR-15 | 7 | 5 | Lưu được tên 256 ký tự và giá trống/0/âm. Khi sửa tên một sản phẩm, các dòng khác hiển thị sai ngay sau lưu và đúng trở lại sau tải lại. |
+
+Báo cáo HTML: `.hw04/phase3/chrome-report/index.html`. Kết quả JSON: `.hw04/phase3/chrome.json`. Chưa chạy ma trận đa trình duyệt Phase 4.
+
+## Phase 4 — Thực thi ma trận
+
+Prompt: `Thực hiện phase 4`
+
+Codex chạy `npm run test:matrix -- --student-id 23120355 --operator Codex`, bắt đầu lúc `2026-11-15T08:29:19.066+07:00`. Chạy đủ 108 lượt từ 36 case trên Chrome, Edge và Firefox. Kết quả 69 pass, 39 fail; cùng 13 case fail trên cả ba trình duyệt. Đã mở 9 báo cáo để xác nhận MSSV, thời gian ISO và người thực hiện hiện trên giao diện.
+
+Rà ảnh đính kèm cho thấy ảnh mặc định của Admin có thể bỏ sót dòng vừa tạo ở cuối bảng. Bổ sung chụp đúng dòng đã lưu sau tải lại cho các case dữ liệu không hợp lệ. Soạn 6 bản nháp GitHub Issues từ kết quả đã xác nhận.
+
+- [Kết quả và 9 báo cáo](docs/phase-4-results.md)
+- [Sáu GitHub Issues đã đăng và ảnh bằng chứng](docs/phase-4-bug-drafts.md)
+
 
