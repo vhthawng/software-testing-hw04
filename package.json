@@ -1,0 +1,12 @@
+{
+  "name": "hw04-eshop-automation",
+  "private": true,
+  "scripts": {
+    "sut:prepare": "node scripts/prepare-sut.mjs",
+    "browsers:install": "playwright install firefox",
+    "test:smoke": "playwright test tests/smoke"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}

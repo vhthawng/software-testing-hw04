@@ -1,0 +1,8 @@
+{
+  "revision": "85af3ba875c88283615e22cb108f13e2fccaf0e9",
+  "sourceDirectory": "eshop-sut",
+  "runtimeDirectory": ".hw04/eshop-sut",
+  "backendURL": "http://localhost:3000",
+  "webURL": "http://localhost:5173",
+  "adminURL": "http://localhost:5174"
+}

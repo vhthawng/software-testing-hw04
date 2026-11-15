@@ -1,0 +1,12 @@
+{
+  "admin": {
+    "email": "admin@eshop.com",
+    "password": "Admin123!"
+  },
+  "accountName": "HW04 Smoke User",
+  "product": {
+    "namePrefix": "HW04 Smoke Product",
+    "categoryName": "Phụ kiện",
+    "price": 100000
+  }
+}
