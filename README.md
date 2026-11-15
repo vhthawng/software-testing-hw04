@@ -40,3 +40,44 @@ Lệnh chạy lần lượt 9 cặp tính năng–trình duyệt, mỗi cặp kh
 Lệnh tiếp tục sau khi một cặp có test fail. Mã thoát `0` nghĩa là tất cả pass, `1` nghĩa là ma trận đầy đủ có kết quả ngoài kỳ vọng, và `2` nghĩa là có cặp thiếu lượt chạy hoặc báo cáo. Nếu lượt chạy được thực hiện hộ, truyền thêm `--operator` với tên người hoặc công cụ thực sự chạy.
 
 [Kết quả Phase 4 và 9 báo cáo Playwright](docs/phase-4-results.md) có trong repo. Tải toàn bộ thư mục `html` của lượt cần xem để giữ các tệp ảnh và trace đi kèm.
+
+## Tóm tắt hồ sơ HW04
+
+Riêng HW04, phạm vi tự động hóa gồm 12 case Web cho mỗi tính năng và 3 trình duyệt cho mỗi tính năng. Các báo cáo nộp bài cần hiển thị MSSV và timestamp ISO. Khi dùng lại Agent Skill ở dự án khác, lấy phạm vi và đầu ra từ yêu cầu của dự án đó.
+
+Để dùng skill trong dự án khác, chép thư mục `skills/automation-skill` vào `.agents/skills/` của dự án mới và gọi `$automation-skill`. Skill có bước nạp bộ hướng dẫn Playwright khi dự án chưa cài.
+
+Repo này lưu bản sao của 8 pack Playwright trong [skills/](skills/). Có thể đọc các pack ngay sau khi clone repo. Nguồn là [TestDino Playwright Skill](https://github.com/testdino-hq/playwright-skill) và bản sao đi kèm [giấy phép MIT](skills/LICENSE-TestDino.txt).
+
+| Chỉ số | Kết quả |
+| --- | ---: |
+| Tính năng Web | 3 |
+| Case tự động hóa | 36 |
+| Case duy nhất đã chạy | 36 |
+| Case duy nhất pass trên cả ba trình duyệt | 23 |
+| Case duy nhất fail trên cả ba trình duyệt | 13 |
+| Lượt tính năng–trình duyệt | 9 |
+| Lượt case–trình duyệt thực thi | 108 |
+| Lượt case–trình duyệt pass / fail / bỏ qua | 69 / 39 / 0 |
+| Lỗi EShop đã đăng GitHub Issues | 6 |
+
+Số liệu trên lấy từ ma trận do Codex chạy, ghi `Operator: Codex` trong HTML. Lượt sinh viên tự chạy theo kế hoạch vẫn chờ bổ sung.
+
+- [Báo cáo chính](report.md), [AI Audit Report](AI_Audit_Report.md) và [AI Critique](AI_Critique.md).
+- Bản PDF gồm [báo cáo chính](output/pdf/report.pdf), [AI Audit Report](output/pdf/AI_Audit_Report.pdf) và [AI Critique](output/pdf/AI_Critique.pdf).
+- [Báo cáo lỗi và ảnh](docs/phase-4-bug-drafts.md), [Git commit log](git_commit_log.txt) và [Agent Skill](skills/automation-skill/SKILL.md).
+- Link YouTube demo chính: Chờ sinh viên cung cấp.
+- Link YouTube minh chứng Agent Skill: Chờ sinh viên cung cấp.
+
+## Bảng tự chấm nháp
+
+| Tiêu chí theo đề | Điểm tối đa | Điểm tạm tính | Căn cứ |
+| --- | ---: | ---: | --- |
+| Task 1 · Pool A · FR-04 | 25 | 25 | 12 case Web và 3 báo cáo. |
+| Task 1 · Pool B · FR-08 | 25 | 25 | 12 case Web và 3 báo cáo. |
+| Task 1 · Pool C · FR-15 | 25 | 25 | 12 case Web và 3 báo cáo. |
+| Task 2 · Demo | 15 | 0 | Chưa có link để xác minh. |
+| Agent Skill | 10 | 0 | Có skill, chờ link demo sử dụng skill. |
+| **Tổng** | **100** | **75** | Điểm dự kiến dựa trên hồ sơ kỹ thuật hiện có. |
+
+Sinh viên cần xác nhận điểm, tự rà phần AI và cập nhật link sau khi có bằng chứng.

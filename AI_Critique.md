@@ -1,0 +1,7 @@
+# AI Critique · HW04
+
+**Sinh viên** Võ Hữu Thắng · **MSSV** 23120355
+
+**Trạng thái** Dự thảo có AI hỗ trợ. Sinh viên cần rà soát, viết lại theo nhận xét của mình và xác nhận trước khi nộp.
+
+Khi chuyển test case Checkout sang Playwright, AI ban đầu so danh sách sản phẩm theo đúng thứ tự thêm vào giỏ. Yêu cầu FR-08 chỉ cần hiển thị đủ sản phẩm và tính đúng tổng tiền. Nếu giao diện sắp xếp lại các dòng, assertion đó sẽ làm test fail dù kết quả nghiệp vụ đúng. Bản rà soát đổi sang kiểm tra nội dung và số lần xuất hiện của từng dòng. Một lỗi khác nằm ở smoke test Admin. AI chọn locator theo role nút cho mục Sản phẩm, trong khi giao diện dùng một mục danh sách có sự kiện click. Trace chỉ ra test đã dừng ở locator này. Nguyên nhân là bản đầu suy từ cách gọi điều khiển mà chưa đối chiếu với markup thật. AI cũng có xu hướng coi ảnh chụp mặc định là đủ bằng chứng. Lượt chạy Admin cho thấy ảnh chỉ chụp vùng đang nhìn thấy nên bỏ sót sản phẩm vừa lưu ở cuối bảng. Bản sửa chụp đúng dòng sản phẩm, và lỗi đổi tên tạm thời dùng khung hình trong trace ngay trước khi tải lại. Bài học là phải chốt trước điều gì chứng minh yêu cầu đã đạt, rồi kiểm tra rằng locator, thời điểm assertion và ảnh thực sự ghi được hành vi đó. Khi một test fail, đối chiếu đặc tả với trạng thái quan sát được trước khi sửa script hoặc ghi nhận lỗi.

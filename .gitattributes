@@ -1,1 +1,3 @@
 reports/phase-4/** -text
+skills/playwright-*/** -text
+skills/e2e-testdino/** -text

@@ -4,7 +4,7 @@ MSSV `23120355` · `HW04-AI`.
 
 > I use AI tools for the following tasks.
 
-Bản ghi đang cập nhật. Prompt, phản hồi và thời điểm của các lượt đã kết thúc được trích từ chat Codex. Lượt triển khai đang mở ghi các tệp đầu ra và kết quả kiểm tra. Nhận xét của sinh viên và thống kê theo mẫu sẽ được cập nhật khi review.
+Bản ghi tổng hợp từ chat Codex. Transcript giữ prompt, phản hồi và thời điểm của từng lượt. Các mục theo phase ghi kết quả kỹ thuật và bản sửa. Phần nhận xét, xác nhận của sinh viên vẫn đang chờ.
 
 ## 1. Đọc đề HW04
 
@@ -278,5 +278,330 @@ Rà ảnh đính kèm cho thấy ảnh mặc định của Admin có thể bỏ 
 
 - [Kết quả và 9 báo cáo](docs/phase-4-results.md)
 - [Sáu GitHub Issues đã đăng và ảnh bằng chứng](docs/phase-4-bug-drafts.md)
+
+## Đối chiếu đầu ra AI trước khi sinh viên xác nhận
+
+| Artifact | Rà soát kỹ thuật | Điều chỉnh hoặc bằng chứng |
+| --- | --- | --- |
+| Cấu hình Playwright và smoke | INCOMPLETE ở bản đầu | Locator Admin đổi theo markup. Cấu hình báo cáo dùng bộ Chrome, Edge, Firefox sau khi xác minh tương thích. |
+| Spec nghiệp vụ | INCOMPLETE ở bản đầu | Review độc lập sửa assertion thứ tự dòng và chốt thời điểm xác minh dữ liệu lưu. |
+| Ảnh lỗi Admin | INCOMPLETE ở lượt đầu | Bổ sung capture đúng dòng mới và khung hình từ trace trong trạng thái lỗi. |
+| 9 báo cáo ma trận | VALID theo đối chiếu kỹ thuật | Mở 9 báo cáo và đối chiếu MSSV, timestamp ISO, người thực hiện, số lượt và 13 mã case fail nhất quán. |
+
+Trong bốn nhóm trên, một nhóm đạt khi kiểm tra và ba nhóm cần sửa hoặc bổ sung bằng chứng. Đây là kết quả rà soát kỹ thuật của Codex. Sinh viên cần tự duyệt các kết luận, chỉnh bản AI Critique và xác nhận nội dung trước khi nộp.
+
+## Phụ lục transcript từ Phase 1 đến Phase 5
+
+Phần này giữ nguyên nội dung prompt và phản hồi cuối lấy từ chat Codex. Mốc giờ ghi theo UTC+07. Các kết quả kỹ thuật và bản sửa nằm ở các mục phía trước.
+
+### Lượt 5 · 2026-11-15T07:48:52+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+thực hiện phase 1
+````
+
+**Đầu ra**
+
+````text
+**Phase 1 hoàn tất.** Smoke test đạt **3/3 pass trên Chrome, Edge và Firefox** ở cả workspace hiện tại và bản clone sạch. Test xác minh backend hoạt động, tài khoản thử đăng nhập được và cùng một sản phẩm thử hiển thị trên Web khách hàng lẫn Web Admin. [Báo cáo smoke](D:/university/software-testing/HW04/playwright-report/index.html)
+
+- Đã cấu hình submodule EShop và xác minh bản clone sạch lấy đúng commit `85af3ba`. Test chạy trên bản sao riêng trong `.hw04/` vì backend đặt lại SQLite khi khởi động. [Hướng dẫn dựng và chạy](D:/university/software-testing/HW04/README.md)
+- Đã ghim **Playwright 1.62.1** và đổi sang bộ **Chrome, Edge, Firefox** được đề chấp nhận vì Windows chặn WebKit khi khởi chạy.
+- Đã bắt đầu [AI Audit Report](D:/university/software-testing/HW04/AI_Audit_Report.md) và bổ sung bước smoke đa trình duyệt vào [automation-skill](D:/university/software-testing/HW04/skills/automation-skill/SKILL.md).
+
+Các thay đổi đang ở workspace, chưa commit hoặc push. Bộ case nghiệp vụ thuộc Phase 2 trở đi.
+````
+
+### Lượt 6 · 2026-11-15T08:04:24+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+Hãy thực hiện phase 2 (hiện tại chỉ tạo script và double-check lại) và tạo một subagent để review lại. Sau khi xong tôi sẽ yêu cầu bạn chạy sau
+````
+
+**Đầu ra**
+
+````text
+Đã hoàn tất phần viết và review tĩnh của **Phase 2**. **Chưa chạy Playwright.**
+
+- [Bảng truy vết](D:/university/software-testing/HW04/docs/phase-2-cases.md) có **36 case Web duy nhất**, 12 case cho mỗi tính năng. 33 case ngoài nhóm pilot chờ viết script ở Phase 3.
+- [Script pilot Checkout](D:/university/software-testing/HW04/tests/checkout/pilot.spec.ts) gồm `TC-B08-001`, `TC-B08-003` và `TC-B08-004`, dùng [dữ liệu JSON riêng](D:/university/software-testing/HW04/tests/data/checkout-pilot.json).
+- Subagent đã review độc lập. Mình bổ sung các kỳ vọng còn thiếu từ HW02 và siết assertion của `TC-B08-004` để locator lệch không làm test pass nhầm. Cú pháp TypeScript, số lượng mã case và phép tính dữ liệu đã được kiểm tra tĩnh. [AI Audit Report](D:/university/software-testing/HW04/AI_Audit_Report.md)
+
+Mã nguồn EShop hiện cho phép nhập trực tiếp vào trường tổng tiền, nên dự kiến `TC-B08-004` sẽ fail. Kết quả thực tế chờ lượt chạy bạn yêu cầu sau.
+````
+
+### Lượt 7 · 2026-11-15T08:09:12+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+Thực hiện chạy đi
+````
+
+**Đầu ra**
+
+````text
+Pilot Checkout trên **Chrome** hoàn tất với **2 pass, 1 fail**.
+
+| Test case | Kết quả | Quan sát |
+|---|---|---|
+| `TC-B08-001` | Pass | Hiển thị đúng sản phẩm, số lượng 2 và tổng 200.000 ₫. |
+| `TC-B08-003` | Pass | Khách chưa đăng nhập được chuyển đến trang đăng nhập khi bấm thanh toán. |
+| `TC-B08-004` | Fail | Tổng hiển thị đúng 200.000 ₫, nhưng ô tổng tiền vẫn cho chỉnh sửa, trái yêu cầu FR-08. |
+
+Mình giữ nguyên assertion của case fail và ghi nhận lỗi giao diện trong [bảng truy vết](D:/university/software-testing/HW04/docs/phase-2-cases.md). [Báo cáo Playwright](D:/university/software-testing/HW04/playwright-report/index.html) có ảnh chụp và trace. Lượt pilot này chỉ chạy trên Chrome.
+````
+
+### Lượt 8 · 2026-11-15T08:10:41+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+be với fe có đang chạy không vậy??
+````
+
+**Đầu ra**
+
+````text
+Hiện cả ba dịch vụ đều đã dừng. Mình kiểm tra và thấy không có tiến trình nào lắng nghe trên các cổng `3000` (backend), `5173` (Web khách hàng) và `5174` (Web Admin).
+
+Playwright tự khởi động các dịch vụ khi chạy test và tự dừng chúng sau khi kết thúc.
+````
+
+### Lượt 9 · 2026-11-15T08:12:12+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+Phase 3 là bắt đầu chạy automate 36 test cases à??
+````
+
+**Đầu ra**
+
+````text
+**Phase 3 là hoàn thành bộ 36 test case tự động.** Hiện đã có 3 script pilot Checkout và cả 3 đã được chạy trên Chrome. Sang Phase 3, mình sẽ viết **33 case còn lại**, review và chạy kiểm tra từng nhóm trên Chrome để phát hiện lỗi script sớm.
+
+**Phase 4 mới chạy chính thức đủ 36 case trên Chrome, Edge và Firefox**, với **108 lượt case–trình duyệt dự kiến** và **9 báo cáo HTML**.
+````
+
+### Lượt 10 · 2026-11-15T08:13:23+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+Vậy hãy thực hiện phase 3. Tạo subagent reivew và rút ra observation (nếu có) và nếu nó hay or thực sự cần thiết thì cập nhật cho skills. Báo cáo review của subagent cho tôi.
+````
+
+**Đầu ra**
+
+````text
+Đã viết đủ **36 test case Playwright**, mỗi tính năng 12 case. Playwright liệt kê đúng 36 mã trong [bảng truy vết](D:/university/software-testing/HW04/docs/phase-2-cases.md). Có **8 commit triển khai spec** trên repo cục bộ, chưa push.
+
+**Kết quả thực thi:** Checkout chạy đủ 12 case trên Chrome, **10 pass và 2 fail**. `TC-B08-002` xác nhận đơn được tạo đúng tổng nhưng giỏ vẫn còn hàng. `TC-B08-004` xác nhận trường tổng tiền vẫn chỉnh sửa được. Lượt chạy cả 36 case bị từ chối ở bước cấp quyền, nên **24 case Hồ sơ và Admin mới được kiểm tra tĩnh**. [Báo cáo Checkout](D:/university/software-testing/HW04/playwright-report/index.html)
+
+### Review độc lập của subagent
+
+| Phát hiện | Điều chỉnh |
+|---|---|
+| Checkout kiểm tra cả thứ tự dòng dù đặc tả chỉ yêu cầu đủ hàng. | So đúng nội dung và số lần xuất hiện, đồng thời kiểm tra tổng tiền. |
+| Case từ chối số điện thoại phụ thuộc vào một câu báo lỗi cụ thể. | Bỏ so khớp câu lỗi và kiểm tra dữ liệu đã lưu sau tải lại. |
+| Admin có thể hiển thị sai ngay sau lưu rồi trông đúng sau tải lại. | Kiểm tra danh sách ở cả hai thời điểm. |
+| Chờ request trong mọi case từ chối có thể làm test timeout khi form chặn ngay trên UI. | Nhận diện chặn native và ghi rõ nhánh gửi request của phiên bản EShop đang kiểm thử. |
+
+Mình đã đưa các nguyên tắc dùng lại được vào [automation-skill](D:/university/software-testing/HW04/skills/automation-skill/SKILL.md) và ghi chi tiết trong [AI Audit Report](D:/university/software-testing/HW04/AI_Audit_Report.md). **Phần còn lại của Phase 3 là chạy lại bộ 36 case trên Chrome sau các bản sửa review.**
+````
+
+### Lượt 11 · 2026-11-15T08:23:49+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+Hãy chạy 36 test case trên Chrome mà lần trước bị từ chối.
+````
+
+**Đầu ra**
+
+````text
+Đã chạy đủ **36 test case trên Chrome** trong **2 phút 24 giây**. Kết quả **23 pass, 13 fail**, không có case bị bỏ qua. [Báo cáo Playwright](D:/university/software-testing/HW04/.hw04/phase3/chrome-report/index.html)
+
+| Tính năng | Pass | Fail | Hành vi ghi nhận |
+|---|---:|---:|---|
+| FR-04 Hồ sơ cá nhân | 6 | 6 | Từ chối số điện thoại hợp lệ và chặn cả thao tác lưu tên, địa chỉ. Chấp nhận số bắt đầu bằng `1`. |
+| FR-08 Thanh toán | 10 | 2 | Tổng tiền có thể chỉnh sửa. Giỏ vẫn còn hàng sau khi đặt đơn thành công. |
+| FR-15 Quản lý sản phẩm | 7 | 5 | Lưu được tên 256 ký tự và giá trống, bằng 0 hoặc âm. Khi đổi tên một sản phẩm, các dòng khác hiển thị sai tên cho đến khi tải lại. |
+
+Báo cáo có ảnh chụp và trace cho các case fail. Mình đã ghi kết quả vào [AI Audit Report](D:/university/software-testing/HW04/AI_Audit_Report.md). Lượt này chỉ chạy Chrome.
+````
+
+### Lượt 12 · 2026-11-15T08:28:06+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+Thực hiện phase 4
+````
+
+**Đầu ra**
+
+````text
+**Phase 4 hoàn tất.** Đã chạy 36 test case trên Chrome, Edge và Firefox, tổng cộng **108 lượt thực thi: 69 pass, 39 fail, 0 bỏ qua**. Cùng 13 case fail trên cả ba trình duyệt. [Kết quả và 9 báo cáo HTML](D:/university/software-testing/HW04/docs/phase-4-results.md)
+
+| Tính năng | Pass mỗi trình duyệt | Fail mỗi trình duyệt |
+|---|---:|---:|
+| FR-04 Hồ sơ cá nhân | 6 | 6 |
+| FR-08 Thanh toán | 10 | 2 |
+| FR-15 Quản lý sản phẩm | 7 | 5 |
+
+Mình đã mở cả 9 báo cáo để kiểm tra `Run by: 23120355`, timestamp ISO và `Operator: Codex` hiển thị đúng. Các lượt fail được gộp thành **6 lỗi EShop có ảnh bằng chứng**. Bốn case Admin được chạy lại riêng để chụp đúng dòng sản phẩm lưu sai. [Bản nháp GitHub Issues và ảnh](D:/university/software-testing/HW04/docs/phase-4-bug-drafts.md)
+
+Các GitHub Issues đang ở dạng bản nháp. Mình đã cập nhật [AI Audit Report](D:/university/software-testing/HW04/AI_Audit_Report.md) và bổ sung cách chụp lỗi tạm thời hoặc ngoài vùng nhìn thấy vào [automation-skill](D:/university/software-testing/HW04/skills/automation-skill/SKILL.md).
+````
+
+### Lượt 13 · 2026-11-15T08:43:40+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+đưa cái issues đó lên github đi
+
+vậy tải githubcli đi
+````
+
+**Đầu ra**
+
+````text
+Đã cài và xác minh **GitHub CLI 2.104.0**. CLI chưa đăng nhập nên sáu issue vẫn chưa được đăng.
+
+Mở PowerShell mới và chạy `gh auth login --hostname github.com --web`. Sau khi xác thực xong, báo mình để đăng cả sáu issue kèm ảnh bằng chứng.
+````
+
+### Lượt 14 · 2026-11-15T08:46:50+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+tôi đã đăng nhập xong rồi.
+````
+
+**Đầu ra**
+
+````text
+Đã đăng và xác minh **6 GitHub Issues** trong repo `vhthawng/software-testing-hw04`. Mỗi issue có ảnh bằng chứng được nhúng trực tiếp trong nội dung.
+
+1. [#1 — Hồ sơ áp dụng sai quy tắc số điện thoại](https://github.com/vhthawng/software-testing-hw04/issues/1)
+2. [#2 — Giỏ vẫn còn hàng sau khi thanh toán](https://github.com/vhthawng/software-testing-hw04/issues/2)
+3. [#3 — Trường tổng tiền ở Checkout cho chỉnh sửa](https://github.com/vhthawng/software-testing-hw04/issues/3)
+4. [#4 — Admin lưu được tên sản phẩm dài 256 ký tự](https://github.com/vhthawng/software-testing-hw04/issues/4)
+5. [#5 — Admin lưu được sản phẩm với giá trống, 0 hoặc âm](https://github.com/vhthawng/software-testing-hw04/issues/5)
+6. [#6 — Đổi tên một sản phẩm làm các dòng khác hiển thị sai](https://github.com/vhthawng/software-testing-hw04/issues/6)
+
+Tám ảnh được lưu trên nhánh riêng `hw04-issue-evidence`. Mình đã cập nhật link của cả sáu issue vào [báo cáo lỗi Phase 4](D:/university/software-testing/HW04/docs/phase-4-bug-drafts.md).
+````
+
+### Lượt 15 · 2026-11-15T08:49:55+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+đưa vào main luôn. Kiểm tra xem phase 4 đã hoàn thành chưa
+````
+
+**Đầu ra**
+
+````text
+Đã push lên **`main`** tại commit [`81f8926`](https://github.com/vhthawng/software-testing-hw04/commit/81f8926). Mình đã xác minh trên nhánh có đủ **9 báo cáo HTML, 9 kết quả JSON và 8 ảnh bằng chứng** cho [6 GitHub Issues](https://github.com/vhthawng/software-testing-hw04/issues).
+
+**Phase 4 đã hoàn thành về mặt kỹ thuật.** Cả 36 case chạy trên Chrome, Edge và Firefox, tổng cộng **108 lượt: 69 pass, 39 fail, 0 bỏ qua**. [Bảng kết quả và link báo cáo](https://github.com/vhthawng/software-testing-hw04/blob/main/docs/phase-4-results.md)
+
+Báo cáo hiện ghi rõ `Operator: Codex`. Theo kế hoạch ban đầu, lượt lấy bằng chứng do **bạn tự chạy** vẫn còn trước khi chốt hồ sơ nộp. Lệnh đã có sẵn trong README: `npm run test:matrix -- --student-id 23120355`.
+````
+
+### Lượt 16 · 2026-11-15T08:54:34+07:00
+
+**Công cụ** OpenAI Codex
+
+**Prompt**
+
+````text
+Thực hiện phase 5. Không cần tạo file zip.
+````
+
+**Đầu ra**
+
+Soạn và rà hồ sơ Phase 5 bằng Markdown và PDF. Các đầu ra được liệt kê trong README và báo cáo chính. Tình trạng xác nhận của sinh viên được ghi trong hồ sơ.
+
+## Phase 5 — Rà hồ sơ và tách skill dùng lại
+
+### Lượt 2026-11-15T08:54:34+07:00
+
+**Công cụ** OpenAI Codex và ReportLab.
+
+**Đầu ra** Báo cáo chính và AI Audit Report có bản Markdown/PDF. AI Critique có 244 từ và được đánh dấu dự thảo chờ sinh viên rà. README có bảng tự chấm nháp 75/100. Git commit log ghi 10 commit chạm spec. Link demo, lượt sinh viên tự chạy và xác nhận của sinh viên vẫn chờ. Hồ sơ được bàn giao thành các tệp riêng.
+
+### Lượt 2026-11-15T09:06:22+07:00
+
+**Công cụ** OpenAI Codex và CLI `skills`.
+
+**Prompt**
+
+````text
+Về phần skills tôi cần bạn điều chỉnh. Lưu ý rằng đây là skills cho automation-testing, không phải skills cho HW04. Bạn đang đi quá cụ thể vào HW04, vậy thì làm sao tôi có thể reuse nó được? Tôi muốn phát triển thành một skills riêng ứng dụng bộ skills playwright, mà tôi đính kèm. Tức là trong automation skills của tôi phải có lệnh tải gọi nếu như bộ playwright kia không có, rồi tới các bước thực hiện như nãy giờ bạn đã apply skills có sẵn để tạo test case, phân tihcs, viết script chạy test cases. [https://github.com/testdino-hq/playwright-skill](https://github.com/testdino-hq/playwright-skill)
+````
+
+**Đầu ra**
+
+````text
+Đã viết lại [automation-skill](D:/university/software-testing/HW04/skills/automation-skill/SKILL.md) để dùng cho các dự án kiểm thử Web. Các yêu cầu riêng của HW04 như số case, MSSV và định dạng báo cáo nằm trong [README](D:/university/software-testing/HW04/README.md).
+
+Skill kiểm tra bộ TestDino Playwright trước. Nếu chưa có, nó hướng dẫn chạy:
+
+```sh
+npx --yes skills add testdino-hq/playwright-skill --agent codex --yes
+```
+
+Sau đó, skill chọn hướng dẫn Playwright phù hợp cho từng bước: **thiết kế test case → phân tích khả năng tự động hóa → viết spec → review → chạy test → phân loại lỗi và thu bằng chứng**. [Bộ skill TestDino Playwright](https://github.com/testdino-hq/playwright-skill#install)
+
+Mình đã chạy thử lệnh cài trong thư mục riêng. Cả **8 pack** được cài và **9 tài liệu được skill dẫn chiếu** đều có mặt. Để dùng ở dự án khác, chép thư mục `skills/automation-skill` vào `.agents/skills/` của dự án đó rồi gọi `$automation-skill`. Bản sửa hiện ở workspace, chưa push.
+````
+
+**Rà soát và điều chỉnh** Phiên bản đầu của skill buộc phạm vi, số báo cáo và định danh của HW04 vào quy trình chung. Theo phản hồi của sinh viên, chuyển yêu cầu đó sang README và hướng dẫn quy trình chung theo đặc tả của từng dự án. Chạy lệnh cài TestDino trong thư mục riêng trống. Xác minh cài được 8 pack và có đủ 9 tài liệu được dẫn chiếu. CLI báo mục chỉ mục gốc upstream không qua được YAML, nhưng cài đầy đủ các pack dùng cho quy trình.
+
+### Lượt 2026-11-15T09:10:52+07:00
+
+**Công cụ** OpenAI Codex, Git, GitHub CLI và ReportLab.
+
+**Prompt**
+
+````text
+push code và cập nhật audit. Kéo toàn bộ phần skills trong .agents/skills ra folder ./skills luôn
+````
+
+**Đầu ra** Sao chép và đối chiếu SHA-256 của 95 tệp trong 8 pack từ `.agents/skills/` sang `skills/`. Bản sao có giấy phép MIT nguồn TestDino. Wrapper tìm pack đã nạp hoặc pack đã cài trước, sau đó tìm trong `skills/` của repo và cài từ upstream nếu pack cần thiết chưa có. Cập nhật bản PDF của audit cùng hồ sơ Phase 5 để đưa lên `main`.
 
 

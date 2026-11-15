@@ -1,33 +1,34 @@
 ---
 name: automation-skill
-description: Chuyển đặc tả và test case thủ công thành bộ kiểm thử Web data-driven bằng Playwright, rà soát bản AI sinh và thu bằng chứng chạy đa trình duyệt. Dùng khi làm HW04 EShop hoặc áp dụng lại quy trình cho một tính năng Web khác.
+description: Thiết kế và phân tích test case Web từ yêu cầu hoặc bộ test thủ công, chuyển sang Playwright Test, review spec, chạy theo trình duyệt và phân loại lỗi từ báo cáo. Dùng khi cần xây dựng hoặc mở rộng kiểm thử tự động cho một ứng dụng Web.
 ---
 
 # Kiểm thử tự động Web với Playwright
 
-1. **Chốt phạm vi và kết quả mong đợi.** Đối chiếu đặc tả, test case cũ và luồng Web của phiên bản SUT đang kiểm thử. Với mỗi case, xác định mã, tiền điều kiện, thao tác và kết quả có thể kiểm tra. Giữ mã khi chuyển cùng một hành vi sang script. Nếu bước cũ bị chặn và luồng thay thế kiểm tra hành vi khác, ghi lý do và dùng mã mới cho case thay thế. Đánh dấu các case chỉ có đường thực thi qua API.
-2. **Sinh và rà từng nhóm case.** Tách các lượt AI theo việc cần quyết định, chẳng hạn xác định case và assertion, xác nhận luồng cùng locator, rồi sinh spec. Ghi nguyên văn prompt, output, công cụ và thời điểm ngay khi làm. Đưa mã case vào tiêu đề test. Đọc đầu vào và giá trị mong đợi từ JSON hoặc CSV. Dùng fixture cho dữ liệu và phiên thử. Các thao tác chính của case Web đi qua giao diện.
-3. **Review trước khi mở rộng.** Dùng locator theo role hoặc label khi giao diện có tên truy cập phù hợp. Chờ bằng web-first assertion và kiểm tra kết quả quan sát được sau thao tác. Rà điều kiện có thể làm test pass khi nghiệp vụ hỏng, đặc biệt ở case từ chối đầu vào. Chạy thử một nhóm nhỏ và kiểm tra test chạy độc lập trước khi nhân rộng. Ghi chỗ AI làm sai hoặc bỏ sót, nguyên nhân và phần sinh viên xác nhận hoặc sửa.
-4. **Chạy và kiểm tra bằng chứng.** Chạy một smoke test mở giao diện trên từng trình duyệt trước khi chạy ma trận nghiệp vụ. Cài browser thành công vẫn có thể gặp lỗi khi khởi chạy. Ghi phiên bản SUT, tập case được chạy, kết quả thực tế và đường dẫn báo cáo. Dùng ảnh chụp hoặc trace để phân biệt lỗi SUT, lỗi script, trạng thái không ổn định và lỗi môi trường. Giữ kỳ vọng nghiệp vụ khi lỗi SUT đã được xác nhận. Chỉ dùng kết quả của lượt chạy thực tế làm bằng chứng.
-5. **Cập nhật skill sau khi review.** Đưa vào skill những quyết định có thể dùng lại đã được đối chiếu trong lúc làm. Chi tiết liên quan riêng tới case, locator hoặc fixture của một tính năng thuộc spec và báo cáo dự án.
+## Nạp bộ hướng dẫn Playwright
 
-## Áp dụng cho HW04 EShop
+Bắt đầu tại thư mục gốc dự án đích. Tìm pack theo thứ tự ưu tiên của dự án: các skill đã được Codex nhận diện, `.agents/skills/<pack>/`, rồi bản sao ở `skills/<pack>/` nếu repo có kèm. `playwright-qa` và `playwright-core` là hai đầu vào chính. Các pack khác dùng theo nhu cầu ở bảng dưới.
 
-- Giữ một tính năng Web từ mỗi Pool A, B và C của HW02. Hoàn thành tối thiểu 12 case Web mỗi tính năng và dùng ít nhất ba mẫu assertion trong bộ test. Ghi rõ case chưa tự động hóa được và lý do.
-- Xuất HTML riêng cho từng cặp tính năng–trình duyệt, tối thiểu chín báo cáo. Mở báo cáo để kiểm tra `Run by: {StudentID}` và timestamp ISO của lượt chạy có thể đọc được.
-- Ghi lỗi SUT đã xác nhận vào báo cáo và đính kèm ảnh cho từng GitHub Issue cần nộp. Tổng hợp phần sinh viên rà soát và sửa vào AI Audit Report và AI Critique.
+Nếu bộ TestDino chưa được cài, chạy lệnh sau từ thư mục gốc dự án với Node.js 22.20 trở lên. Dùng `npx.cmd` trên Windows khi PowerShell chặn `npx.ps1`.
 
-## Kiểm tra kỳ vọng sau khi sinh spec
+```sh
+npx --yes skills add testdino-hq/playwright-skill --agent codex --yes
+```
 
-- Khi đặc tả yêu cầu danh sách đủ phần tử, so khớp tập phần tử có tính số lần xuất hiện. Chỉ kiểm tra thứ tự nếu đó là yêu cầu nghiệp vụ.
-- Khi thao tác có kết quả trên giao diện và dữ liệu lưu riêng, kiểm tra trạng thái ngay sau thao tác và kiểm tra lại sau tải trang nếu cả hai thuộc kỳ vọng. Với trạng thái chỉ tồn tại trong phiên như giỏ hàng, kiểm tra trong cùng phiên trước khi tải lại trang.
-- Với case từ chối đầu vào, đợi dấu hiệu xử lý phù hợp với UI như chặn native, thông báo hoặc phản hồi request rồi xác nhận dữ liệu giữ nguyên. Chỉ so câu thông báo hoặc bắt buộc có request khi đặc tả yêu cầu hoặc khi spec ghi rõ đang kiểm tra một nhánh triển khai cụ thể.
-- Với lỗi xuất hiện tạm thời hoặc ngoài vùng đang nhìn thấy, chụp phần tử tại bước có trạng thái sai hoặc lấy khung hình tương ứng từ trace. Rà ảnh trước khi dùng làm bằng chứng.
+Nếu chỉ thiếu một pack, thêm `--skill <tên-pack>` để cài riêng. Sau khi cài, tìm và đọc `SKILL.md` của các pack cần dùng cùng các hướng dẫn được chọn. Có thể đọc các tệp vừa cài ngay trong phiên hiện tại nếu danh mục skill chưa làm mới. Nếu một liên kết chéo dùng tên thư mục upstream như `../core/`, tìm tệp cùng tên trong pack đã cài như `playwright-core/`. Nếu không cài được, ghi rõ nguyên nhân và tiếp tục phần có thể làm bằng cấu hình dự án hoặc tài liệu Playwright. [Nguồn bộ skill TestDino](https://github.com/testdino-hq/playwright-skill#install)
 
-## Tham khảo Playwright trong repo
+| Việc đang làm | Pack và tài liệu ưu tiên |
+| --- | --- |
+| Thiết kế case, chuyển case cũ | `playwright-qa` · `test-design.md`, `manual-to-automated.md` |
+| Viết spec, chọn locator, chuẩn bị dữ liệu | `playwright-core` · `locators.md`, `assertions-and-waiting.md`, `fixtures-and-hooks.md`, `test-data-management.md` |
+| Review spec, phân tích case fail | `playwright-qa` · `test-review.md`, `bug-reports.md` · `playwright-core` · `trace-analysis.md` |
+| Cần khảo sát UI, tách page object hoặc đưa suite lên CI | `playwright-cli`, `playwright-pom` hoặc `playwright-ci` theo việc cần làm |
 
-Các tài liệu sau nằm trong `.agents/skills/` khi bộ skill Playwright đã được cài. Có thể áp dụng quy trình trên độc lập nếu bản đóng gói chỉ có skill này.
+## Quy trình
 
-- Khi chuyển case thủ công hoặc review spec, xem [manual-to-automated.md](../../.agents/skills/playwright-qa/manual-to-automated.md) và [test-review.md](../../.agents/skills/playwright-qa/test-review.md).
-- Khi viết spec, xem [locators.md](../../.agents/skills/playwright-core/locators.md), [assertions-and-waiting.md](../../.agents/skills/playwright-core/assertions-and-waiting.md) và [test-data-management.md](../../.agents/skills/playwright-core/test-data-management.md).
-- Khi phân tích lượt chạy thất bại, xem [bug-reports.md](../../.agents/skills/playwright-qa/bug-reports.md).
+1. **Khảo sát và thiết kế case.** Đọc đặc tả, acceptance criteria, test case cũ, cấu hình test và luồng UI thực tế. Tạo bảng gồm mã case, yêu cầu nguồn, tiền điều kiện, dữ liệu, thao tác và kết quả quan sát được. Phủ luồng hợp lệ, từ chối và biên theo rủi ro. Giữ mã cũ khi hành vi được kiểm tra giữ nguyên. Ghi rõ case bị chặn, thiếu kỳ vọng hoặc thuộc tầng API thay vì tính vào độ phủ Web. Xác nhận với người dùng khi một kỳ vọng chưa rõ có thể đổi verdict.
+2. **Phân tích khả năng tự động hóa.** Xác định trạng thái ban đầu, dữ liệu riêng cho từng test, cách dọn dữ liệu, locator theo DOM thật và dấu hiệu cho biết thao tác đã hoàn tất. Dùng API hoặc fixture để chuẩn bị dữ liệu khi thích hợp, giữ thao tác cần kiểm thử qua giao diện Web. Chọn nhóm pilot đại diện trước khi mở rộng.
+3. **Viết spec.** Dùng cấu hình, package manager và phiên bản Playwright của repo. Đưa mã case vào tên test. Khi có dữ liệu lặp hoặc nhiều giá trị biên, tham số hóa theo cách repo dùng và tách dataset nếu cần. Ưu tiên locator role hoặc label phù hợp và web-first assertions. Mỗi case phải chạy độc lập và kiểm tra kết quả nghiệp vụ, chẳng hạn giá trị đã lưu hoặc bản ghi bị từ chối.
+4. **Review.** Đối chiếu từng spec với mã case và kỳ vọng. Chỉ kiểm tra thứ tự danh sách khi đặc tả yêu cầu. Với dữ liệu cần lưu bền, đọc lại sau khi thao tác hoàn tất. Với lỗi tạm thời hoặc trạng thái trong phiên, kiểm tra ngay tại bước có thể quan sát được. Với đầu vào bị từ chối, đợi tín hiệu xử lý phù hợp rồi kiểm tra dữ liệu giữ nguyên. Phân biệt kiểm tra tĩnh và kết quả đã thực thi. Sửa spec khi có lỗi hoặc giả định sai.
+5. **Chạy test.** Ưu tiên lệnh có sẵn trong repo. Nếu có dự án Playwright Test mà chưa có lệnh wrapper, dùng `npx playwright test --list` để đối chiếu case, rồi chạy một nhóm bằng `npx playwright test <đường-dẫn-spec> --project=<project>`. Dùng tên project thực tế trong cấu hình. Smoke từng browser trước ma trận nếu mục tiêu yêu cầu đa trình duyệt. Sau pilot, chạy phạm vi người dùng yêu cầu với báo cáo của dự án. Ghi phiên bản ứng dụng, case đã chạy, browser, kết quả và đường dẫn artifact.
+6. **Phân loại lỗi và bàn giao.** Dùng trace, ảnh và bước kiểm chứng để phân biệt lỗi ứng dụng, lỗi script, lỗi môi trường và kết quả không ổn định. Chụp đúng phần tử và đúng thời điểm lỗi xuất hiện. Gộp các failure cùng nguyên nhân, giữ kỳ vọng theo đặc tả và ghi lại giới hạn chưa xác minh. Bàn giao bảng truy vết, spec/dataset, số liệu thực tế và bằng chứng theo phạm vi được giao.
