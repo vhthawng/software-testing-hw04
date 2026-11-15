@@ -1,0 +1,19 @@
+{
+  "defaultCategory": "Điện thoại",
+  "otherCategory": "Phụ kiện",
+  "standardPrice": 100000,
+  "comparisonPrice": 50000,
+  "updatedName": "HW04 Updated Product",
+  "create": [
+    { "id": "TC-C15-001", "title": "tạo và xem sản phẩm sau tải lại", "name": "HW04 New Product", "price": "100000", "accept": true },
+    { "id": "TC-C15-002", "title": "từ chối tên trống", "name": "", "price": "100000", "accept": false },
+    { "id": "TC-C15-003", "title": "lưu tên một ký tự", "name": "A", "price": "100000", "accept": true },
+    { "id": "TC-C15-004", "title": "lưu tên 255 ký tự", "name": "A", "length": 255, "price": "100000", "accept": true },
+    { "id": "TC-C15-005", "title": "không lưu tên 256 ký tự", "name": "A", "length": 256, "price": "100000", "accept": false },
+    { "id": "TC-C15-006", "title": "từ chối giá trống", "name": "HW04 Empty Price", "price": "", "accept": false },
+    { "id": "TC-C15-007", "title": "từ chối giá 0", "name": "HW04 Zero Price", "price": "0", "accept": false },
+    { "id": "TC-C15-008", "title": "lưu giá dương 1", "name": "HW04 Price One", "price": "1", "accept": true },
+    { "id": "TC-C15-009", "title": "từ chối giá âm", "name": "HW04 Negative Price", "price": "-1", "accept": false },
+    { "id": "TC-C15-011", "title": "lưu danh mục khác mặc định", "name": "HW04 Other Category", "price": "100000", "category": "Phụ kiện", "accept": true }
+  ]
+}
