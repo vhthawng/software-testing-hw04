@@ -1,0 +1,16 @@
+{
+  "baseline": { "phone": "0987654321", "address": "18 Nguyễn Trãi, TP.HCM" },
+  "accepted": [
+    { "id": "TC-A04-001", "phone": "0912345678", "title": "chấp nhận số 10 chữ số" },
+    { "id": "TC-A04-003", "phone": "09123456789", "title": "chấp nhận số 11 chữ số" }
+  ],
+  "rejected": [
+    { "id": "TC-A04-002", "phone": "091234567", "title": "từ chối số 9 chữ số" },
+    { "id": "TC-A04-004", "phone": "091234567890", "title": "từ chối số 12 chữ số" },
+    { "id": "TC-A04-005", "phone": "1912345678", "title": "từ chối số không bắt đầu bằng 0" },
+    { "id": "TC-A04-006", "phone": "09123456a1", "title": "từ chối số chứa chữ" },
+    { "id": "TC-A04-014", "phone": "", "title": "từ chối số trống" }
+  ],
+  "updatedName": "Nguyễn Thị Bình",
+  "updatedAddress": "45 Nguyễn Huệ, Quận 1, TP.HCM"
+}
