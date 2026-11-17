@@ -1,5 +1,7 @@
 HW04 - Vo Huu Thang - MSSV 23120355
-Git history recorded at public main: 81f8926
+Submission content commit on main: 0c7c1d7
+This snapshot ends at the submission content commit. The subsequent commit publishes this log.
+Live history: https://github.com/vhthawng/software-testing-hw04/commits/main/
 
 Commits modifying Playwright spec files: 10
 acc7ae9 | 2026-11-15T08:51:58+07:00 | Publish Phase 4 browser matrix and issue evidence
@@ -13,7 +15,10 @@ cac22a5 | 2026-11-15T08:22:20+07:00 | test(checkout): cover guest checkout denia
 2035b5a | 2026-11-15T08:22:20+07:00 | test(checkout): cover cart contents and recalculation
 c514c1b | 2026-11-15T08:22:19+07:00 | chore: set up EShop Playwright and Checkout pilot
 
-Full repository history at this snapshot:
+Full repository history through the submission content commit:
+0c7c1d7 | 2026-11-17T19:47:57+07:00 | Update demo video and finalize HW04 submission files
+7f40133 | 2026-11-15T09:23:24+07:00 | Update student AI critique and PDF
+7bd954b | 2026-11-15T09:16:10+07:00 | Publish Phase 5 documents and reusable Playwright skills
 81f8926 | 2026-11-15T08:51:58+07:00 | Merge remote-tracking branch 'origin/hw04-issue-evidence'
 acc7ae9 | 2026-11-15T08:51:58+07:00 | Publish Phase 4 browser matrix and issue evidence
 542be72 | 2026-11-15T08:48:20+07:00 | Add screenshot evidence for HW04 bug reports
