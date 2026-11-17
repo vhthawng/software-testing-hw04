@@ -2,7 +2,7 @@
 
 **Sinh viên** Võ Hữu Thắng · **MSSV** 23120355 · **Bài tập** HW04-AI
 
-**Ngày tổng hợp** 15/11/2026 · **SUT** EShop, commit `85af3ba875c88283615e22cb108f13e2fccaf0e9`
+**Ngày tổng hợp** 17/11/2026 · **SUT** EShop, commit `85af3ba875c88283615e22cb108f13e2fccaf0e9`
 
 ## 1. Phạm vi và truy vết
 
@@ -16,12 +16,12 @@ Bộ test giữ ba tính năng Web từ HW02. FR-04 kiểm tra hồ sơ khách h
 
 ## 2. Thiết kế và thực thi
 
-Dùng Playwright Test 1.62.1 với spec TypeScript và dữ liệu JSON. Các thao tác nghiệp vụ đi qua UI. Fixture tạo tài khoản thử riêng và sản phẩm theo giá đã định; thao tác chuẩn bị và dọn dữ liệu dùng API cục bộ. Mỗi lượt chạy khởi động EShop trên bản SQLite riêng. Cách này tránh để dữ liệu viết trong khi test ảnh hưởng bản mã nguồn tham chiếu.
+Dùng Playwright Test 1.62.1 với spec TypeScript và dữ liệu JSON. Các thao tác nghiệp vụ đi qua UI. Fixture dùng API cục bộ để tạo tài khoản thử, chuẩn bị sản phẩm theo giá đã định và dọn sản phẩm sau test. Mỗi lượt khởi động lại EShop và đặt lại SQLite trong thư mục chạy thử. Bản mã nguồn tham chiếu được giữ riêng.
 
 Các mẫu kiểm tra gồm `toHaveURL` cho hướng điều hướng, `toHaveValue` cho dữ liệu hiển thị hoặc đã lưu, `toHaveCount` cho số dòng và `not.toBeEditable` cho quyền chỉnh sửa. Với kết quả cần lưu bền, test tải lại màn hình sau khi thao tác hoàn tất. Với giỏ hàng chỉ tồn tại trong phiên, test quan sát trong cùng phiên.
 
 ```powershell
-npm run test:matrix -- --student-id 23120355
+npm run test:matrix -- --student-id 23120355 --operator Codex
 ```
 
 Ma trận dùng Chrome, Edge và Firefox. Nhóm trình duyệt này được đề cho phép và đã qua smoke test trên Windows. Xem hướng dẫn dựng lại từ repo, gồm các bước chuẩn bị submodule và dữ liệu. [README trên GitHub](https://github.com/vhthawng/software-testing-hw04/blob/main/README.md)
@@ -53,7 +53,7 @@ Lượt chạy trên được Codex thực hiện cho MSSV 23120355. Cả 9 báo
 
 ## 5. AI hỗ trợ và các điều chỉnh sau rà soát
 
-Quá trình chia thành lập bảng truy vết, xác định locator và kỳ vọng, sinh nhóm pilot, mở rộng spec, rồi xem lại bằng kết quả thực thi. Codex và subagent đã rà soát kỹ thuật; phần sinh viên tự xác nhận và phản ánh vẫn chờ hoàn tất.
+Quá trình gồm lập bảng truy vết, xác định locator và kỳ vọng, sinh nhóm pilot, mở rộng spec, rồi rà lại dựa trên kết quả thực thi. Codex và subagent đã rà soát kỹ thuật. Sinh viên đã cập nhật AI Critique và còn cần xác nhận các kết luận rà soát.
 
 | Điểm cần sửa | Nguyên nhân và điều chỉnh |
 | --- | --- |
@@ -66,7 +66,9 @@ Quy trình này áp dụng AI để sinh và chạy test theo từng nhóm (G9.2
 
 ## 6. Tài liệu và phần sinh viên xác nhận
 
-- [AI Audit Report](AI_Audit_Report.md) ghi prompt, đầu ra và kết quả rà soát kỹ thuật.
-- [AI Critique](AI_Critique.md) là bản dự thảo để sinh viên duyệt và chỉnh theo trải nghiệm của mình.
+- [AI Critique sinh viên đã cập nhật](AI_Critique.md).
 - [Git commit log](git_commit_log.txt) có 10 commit thay đổi spec tại mốc repo công khai được dùng để soát hồ sơ.
-- Link YouTube demo chính và minh chứng sử dụng skill đang chờ sinh viên cung cấp. Bảng tự chấm nháp nằm trong [README](README.md).
+- [Video demo chung cho Task 2 và Agent Skill](https://youtu.be/SELrW39XDEE).
+- Điểm tự chấm là 100/100. [Bảng tự chấm trong README](README.md)
+
+- [Tham chiếu AI Audit bản Markdown](AI_Audit_Report.md) · [AI Audit bản PDF](AI_Audit_Report.pdf).

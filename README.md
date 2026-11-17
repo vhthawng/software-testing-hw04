@@ -64,20 +64,19 @@ Repo này lưu bản sao của 8 pack Playwright trong [skills/](skills/). Có t
 Số liệu trên lấy từ ma trận do Codex chạy, ghi `Operator: Codex` trong HTML. Lượt sinh viên tự chạy theo kế hoạch vẫn chờ bổ sung.
 
 - [Báo cáo chính](report.md), [AI Audit Report](AI_Audit_Report.md) và [AI Critique](AI_Critique.md).
-- Bản PDF gồm [báo cáo chính](output/pdf/report.pdf), [AI Audit Report](output/pdf/AI_Audit_Report.pdf) và [AI Critique](output/pdf/AI_Critique.pdf).
+- Bản PDF gồm [báo cáo chính](report.pdf), [AI Audit Report](AI_Audit_Report.pdf) và [AI Critique](AI_Critique.pdf).
 - [Báo cáo lỗi và ảnh](docs/phase-4-bug-drafts.md), [Git commit log](git_commit_log.txt) và [Agent Skill](skills/automation-skill/SKILL.md).
-- Link YouTube demo chính: Chờ sinh viên cung cấp.
-- Link YouTube minh chứng Agent Skill: Chờ sinh viên cung cấp.
+- [Video demo chung cho Task 2 và Agent Skill](https://youtu.be/SELrW39XDEE).
 
-## Bảng tự chấm nháp
+## Bảng tự chấm
 
-| Tiêu chí theo đề | Điểm tối đa | Điểm tạm tính | Căn cứ |
+| Tiêu chí theo đề | Điểm tối đa | Điểm tự chấm | Căn cứ |
 | --- | ---: | ---: | --- |
 | Task 1 · Pool A · FR-04 | 25 | 25 | 12 case Web và 3 báo cáo. |
 | Task 1 · Pool B · FR-08 | 25 | 25 | 12 case Web và 3 báo cáo. |
 | Task 1 · Pool C · FR-15 | 25 | 25 | 12 case Web và 3 báo cáo. |
-| Task 2 · Demo | 15 | 0 | Chưa có link để xác minh. |
-| Agent Skill | 10 | 0 | Có skill, chờ link demo sử dụng skill. |
-| **Tổng** | **100** | **75** | Điểm dự kiến dựa trên hồ sơ kỹ thuật hiện có. |
+| Task 2 · Demo | 15 | 15 | Video demo do sinh viên cung cấp. |
+| Agent Skill | 10 | 10 | Skill đã công bố và được minh chứng trong video demo chung. |
+| **Tổng** | **100** | **100** | |
 
-Sinh viên cần xác nhận điểm, tự rà phần AI và cập nhật link sau khi có bằng chứng.
+Sinh viên cần xác nhận nội dung rà soát AI trước khi nộp.
